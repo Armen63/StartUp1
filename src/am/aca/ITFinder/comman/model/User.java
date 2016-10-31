@@ -6,12 +6,20 @@ import java.util.Date;
  * Created by Armen on 10/18/2016.
  */
 public class User {
+    private Integer ID;
     private String firstName;
     private String lastName;
     private Date birthDay;
     private String eMail;
     private String password;
     private String about;
+    public Integer getID() {
+        return ID;
+    }
+
+    public void setID(Integer ID) {
+        this.ID = ID;
+    }
 
     public String getFirstName() {
         return firstName;

@@ -10,7 +10,8 @@ import java.sql.SQLException;
  */
 public interface UserRepository {
     void addUser(User user) throws MyException, SQLException;
-    void editUser(Integer id) throws MyException, SQLException, MyException;
-    void deleteUser(Integer id) throws MyException, SQLException;
-    void getUser(Integer id) throws MyException, SQLException;
+//    void editUser(Integer id) throws SQLException, MyException;
+//    void deleteUser(Integer id) throws MyException, SQLException;
+    User getUser(String login, String password) throws MyException, SQLException;
+    Boolean getUser(String eMail) throws MyException, SQLException;
 }
